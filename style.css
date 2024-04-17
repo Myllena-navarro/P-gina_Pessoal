@@ -1,0 +1,212 @@
+/* Estilização de Página */
+/* Estilo geral */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* Estilo do body */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #CD853F;
+    color: #333;
+}
+  
+/* Estilo do header */
+header {
+    background-color: #DEB887;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin: 10px 0; 
+    border-radius: 50px; 
+}
+
+.my-table {
+    display: flex;
+    align-items: center;
+}
+
+.my-table img {
+    border-radius: 50%;
+    width: 150px;
+    margin-right: 20px; 
+}
+  
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold; 
+}  
+  
+nav ul li a:hover {
+    color: #A0522D;
+}
+
+/* Estilo de h2 */
+h2 {
+    text-align: center;
+}
+
+/* Estilo da seção Sobre Mim */
+#about {
+    padding: 20px;
+    background-color: #FFDEAD;
+    margin: 10px 0;
+    border-radius: 50px;
+}
+  
+#about p {
+    line-height: 1.5;
+    text-align: justify;
+}
+  
+/* Estilo da seção Portfólio */
+#portfolio {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFE4C4;
+    margin: 10px 0;
+    border-radius: 50px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.portfolio-item {
+    margin: 10px;
+}
+
+.card {
+    width: 400px;
+    height: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.card:hover .front {
+    transform: rotateY(-180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(0);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.front {
+    background-color: #FFDAB9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(0);
+    transition: background-color 0.5s;
+}
+  
+/* Estilo da seção Habilidades */
+#skills {
+    padding: 20px;
+    text-align: center;
+    background-color: #FFEBCD;
+    margin: 10px 0; 
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+}
+  
+.skills-table-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.skills-table {
+    width: 30%;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+/* Estilo da seção Contatos */
+#contact {
+    padding: 20px;
+    text-align: center;
+    background-color: #FFF8DC;
+    margin: 10px 0;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#contact form {
+    margin-top: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+#contact textarea {
+    width: 100%;
+    height: 150px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+/* Estilo do footer */
+#footer {
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    font-weight: bold;
+}

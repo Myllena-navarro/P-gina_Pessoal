@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página pessoal de Myllena Navarro, estudante de Análise e Desenvolvimento de Sistemas, focada na área de Dados.">
+  <title>💻📚 Myllena Navarro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Início da página pessoal -->
+  <header>
+    <table class="my-table">
+      <tr>
+        <td><img src="myllena_profile.jpeg" alt="Foto de Myllena Navarro" width="150px"></td>
+        <td>
+          <h1>Myllena Navarro</h1>
+          <p><em>Estudante de Análise e Desenvolvimento de Sistemas, focada na área de Dados</em></p>
+          <p>Olá! Sou uma entusiasta de dados dedicada a transformar informações em insights. Tenho experiência em
+            Python,
+            SQL e análise de dados, buscando sempre novas maneiras de extrair valor dos dados.</p>
+          <p>Confira meu perfil no <a href="https://www.linkedin.com/in/myllena-navarro-8a1869209">LinkedIn</a></p>
+        </td>
+      </tr>
+    </table>
+    <nav>
+      <ul>
+        <li><a href="#about">Sobre Mim</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção sobre mim -->
+  <section id="about">
+    <div class="container">
+      <h2>Sobre Mim</h2>
+      <p>Meu nome é Myllena Navarro, tenho 25 anos e sou estudante do curso de ADS na CESAR School.
+        Iniciei minha jornada profissional com uma formação em Pedagogia, mas durante a pandemia,
+        descobri minha paixão pela tecnologia. Através de estudos e pesquisas intensivas, fiz uma transição de carreira
+        para a área
+        de tecnologia. Embora tenha mudado de foco profissional, não deixei minhas habilidades adquiridos na Pedagogia.
+        Aplico tais habilidades em projetos voluntários, onde posso contribuir para a comunidade. Costumo dizer que
+        minha formação em
+        Pedagogia me proporcionou uma base nas habilidades de Soft Skills, enquanto minha graduação em ADS está me
+        capacitando com habilidades
+        de Hard Skills. Estou em busca de oportunidades para atuar na área de Dados, onde posso aplicar meus
+        conhecimentos e
+        habilidades para transformar dados em insights valiosos.</p>
+    </div>
+  </section>
+  
+  <!-- Seção portfólio -->
+  <section id="portfolio">
+    <h2>Meu Portfólio</h2>
+    <div class="container">
+      <div class="portfolio-item">
+        <div class="card">
+          <div class="front">
+            <img src="projeto_restaurante.png" alt="Projeto 1">
+          </div>
+          <div class="back">
+            <p>Este projeto é um sistema de gerenciamento para restaurantes que permite a realização das operações
+              básicas de um CRUD (Create, Read, Update, Delete) para o cadastro de restaurantes, além de possibilitar a
+              geração de pedidos para futuros clientes. O objetivo é fornecer uma solução simples e eficiente para a
+              administração de estabelecimentos gastronômicos, facilitando o registro e monitoramento das informações
+              essenciais.</p>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="card">
+          <div class="front">
+            <img src="projeto_livros.jpg" width="300px" alt="Projeto 2">
+          </div>
+          <div class="back">
+            <p>Este projeto é um gerenciador de dados voltado para armazenamento de livros, permitindo a manipulação de
+              informações relacionadas a diferentes livros, como lista de livros e outros atributos relevantes. O
+              sistema oferece operações básicas de CRUD para gerenciar os dados dos livros e, além disso, incorpora
+              funcionalidades estatísticas para análise mais profunda.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <h3 style="text-align: center;">Outros projetos</h3>
+      <p>Tenho outros projetos de manipulação de Banco de Dados e Power Bi, no qual estão armazenados no Jupyter
+        Notebook</p>
+    </div>
+  </section>
+
+  <!-- Seção habilidades -->
+  <section id="skills">
+    <h2>Habilidades</h2>
+    <!-- Tabela de Hard Skills -->
+    <div>
+      <h3>Hard Skills</h3>
+      <table class="skills-table">
+        <tr>
+          <th>Linguagens de Programação:</th>
+          <td>Python</td>
+        </tr>
+        <tr>
+          <th>Bancos de Dados:</th>
+          <td>SQL</td>
+        </tr>
+        <tr>
+          <th>Outras:</th>
+          <td>Power BI; Excel</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Tabela de Soft Skills -->
+    <div>
+      <h3>Soft Skills</h3>
+      <table class="skills-table">
+        <tr>
+          <td>Comunicação; Liderança</td>
+        </tr>
+        <tr>
+          <td>Trabalho em Equipe; Resolução de Problemas</td>
+        </tr>
+        <tr>
+          <td>Gerenciamento de Tempo; Pensamento Analítico</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Tabela de Idiomas -->
+    <div>
+      <h3>Idiomas</h3>
+      <table class="skills-table">
+        <tr>
+          <td>Inglês Básico; Espanhol Intermediário</td>
+        </tr>
+      </table>
+    </div>
+    </div>
+  </section>
+
+  <!-- Seção contatos -->
+  <section id="contact">
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      <form action="" method="">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome"><br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email"><br>
+        <label for="assunto">Assunto:</label>
+        <select name="assunto" id="assunto">
+          <option value="1">Dúvida</option>
+          <option value="2">Sugestão</option>
+          <option value="3">Mais projetos</option>
+          <option value="4">Proposta de Trabalho</option>
+        </select><br>
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea><br>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+<!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Minha Página Pessoal. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
